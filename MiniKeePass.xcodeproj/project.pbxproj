@@ -146,26 +146,7 @@
 		784017C21EEA72FF00110DDB /* TwoFishInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 784017BF1EEA72FF00110DDB /* TwoFishInputStream.m */; };
 		784017C31EEA72FF00110DDB /* TwoFishOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 784017C11EEA72FF00110DDB /* TwoFishOutputStream.m */; };
 		784017C61EEA732000110DDB /* ChaCha20RandomStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 784017C51EEA732000110DDB /* ChaCha20RandomStream.m */; };
-		784017CD1EEA754800110DDB /* argon2iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784017CC1EEA753600110DDB /* argon2iOS.framework */; };
-		784017CE1EEA754800110DDB /* argon2iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 784017CC1EEA753600110DDB /* argon2iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		784017CB1EEA753600110DDB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 784017C71EEA753600110DDB /* argon2iOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 78F8028B1E8EE2A50039625E;
-			remoteInfo = argon2iOS;
-		};
-		784017CF1EEA754800110DDB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 784017C71EEA753600110DDB /* argon2iOS.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 78F8028A1E8EE2A50039625E;
-			remoteInfo = argon2iOS;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		784017D11EEA754800110DDB /* Embed Frameworks */ = {
@@ -174,7 +155,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				784017CE1EEA754800110DDB /* argon2iOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,7 +400,6 @@
 		784017C11EEA72FF00110DDB /* TwoFishOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoFishOutputStream.m; sourceTree = "<group>"; };
 		784017C41EEA732000110DDB /* ChaCha20RandomStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChaCha20RandomStream.h; sourceTree = "<group>"; };
 		784017C51EEA732000110DDB /* ChaCha20RandomStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaCha20RandomStream.m; sourceTree = "<group>"; };
-		784017C71EEA753600110DDB /* argon2iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = argon2iOS.xcodeproj; sourceTree = "<group>"; };
 		8048812D464A148B366D4682 /* Pods-MiniKeePass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniKeePass.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiniKeePass/Pods-MiniKeePass.release.xcconfig"; sourceTree = "<group>"; };
 		B24AE57BE06635F1891ED73F /* Pods-MiniKeePass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniKeePass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiniKeePass/Pods-MiniKeePass.debug.xcconfig"; sourceTree = "<group>"; };
 		BDB0FF5D194C7C6F00C44DEF /* nl */ = {isa = PBXFileReference; lastKnownFileType = text; name = nl; path = nl.lproj/AppStore.txt; sourceTree = "<group>"; };
@@ -447,7 +426,6 @@
 				689D000F13A42777005EBD36 /* Security.framework in Frameworks */,
 				689DFFDA13A4273F005EBD36 /* UIKit.framework in Frameworks */,
 				689D001113A4277E005EBD36 /* libxml2.dylib in Frameworks */,
-				784017CD1EEA754800110DDB /* argon2iOS.framework in Frameworks */,
 				689D001313A42784005EBD36 /* libz.dylib in Frameworks */,
 				5F14A1C0A118C51A62C39062 /* libPods-MiniKeePass.a in Frameworks */,
 			);
@@ -741,7 +719,6 @@
 				689DFFD813A4273F005EBD36 /* Frameworks */,
 				689D041413A42B85005EBD36 /* Resources */,
 				689DFFD613A4273F005EBD36 /* Products */,
-				784017C71EEA753600110DDB /* argon2iOS.xcodeproj */,
 				853B5D13C0908886096092EF /* Pods */,
 			);
 			sourceTree = "<group>";
@@ -956,14 +933,6 @@
 			path = Crypto;
 			sourceTree = "<group>";
 		};
-		784017C81EEA753600110DDB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				784017CC1EEA753600110DDB /* argon2iOS.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		853B5D13C0908886096092EF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -990,7 +959,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				784017D01EEA754800110DDB /* PBXTargetDependency */,
 			);
 			name = MiniKeePass;
 			productName = MiniKeePass;
@@ -1038,28 +1006,12 @@
 			mainGroup = 689DFFCA13A4273F005EBD36;
 			productRefGroup = 689DFFD613A4273F005EBD36 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 784017C81EEA753600110DDB /* Products */;
-					ProjectRef = 784017C71EEA753600110DDB /* argon2iOS.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				689DFFD413A4273F005EBD36 /* MiniKeePass */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		784017CC1EEA753600110DDB /* argon2iOS.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = argon2iOS.framework;
-			remoteRef = 784017CB1EEA753600110DDB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		689DFFD313A4273F005EBD36 /* Resources */ = {
@@ -1248,14 +1200,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		784017D01EEA754800110DDB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = argon2iOS;
-			targetProxy = 784017CF1EEA754800110DDB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		687AAA991889F8B400AB8AC5 /* AppStore.txt */ = {
