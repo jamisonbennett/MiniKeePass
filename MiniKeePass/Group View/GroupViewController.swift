@@ -164,8 +164,8 @@ class GroupViewController: UITableViewController, UISearchResultsUpdating {
             groups = []
             entries = searchResults
         } else {
-            groups = parentGroup.groups as! [KdbGroup]
-            entries = parentGroup.entries as! [KdbEntry]
+            groups = parentGroup.groups as? [KdbGroup]
+            entries = parentGroup.entries as? [KdbEntry]
         }
 
         if let appSettings = AppSettings.sharedInstance(), appSettings.sortAlphabetically() {

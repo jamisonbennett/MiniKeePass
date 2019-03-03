@@ -99,8 +99,8 @@ class PasswordGeneratorViewController: UITableViewController, UIPickerViewDataSo
 
         var password = ""
         for _ in 1...length {
-            let idx = Int((cryptoRandomStream?.getInt())! % UInt32(charSet.characters.count))
-            password.append(charSet[charSet.characters.index(charSet.startIndex, offsetBy: idx)])
+            let idx = Int((cryptoRandomStream?.getInt())! % UInt32(charSet.count))
+            password.append(charSet[charSet.index(charSet.startIndex, offsetBy: idx)])
         }
     
         passwordLabel.text = password

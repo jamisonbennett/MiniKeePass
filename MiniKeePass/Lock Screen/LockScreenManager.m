@@ -234,7 +234,7 @@ static LockScreenManager *sharedInstance = nil;
                 pinViewController.titleLabel.text = [self getPinTitleWithAttemptsRemaining];
                 
                 // Check if they have failed too many times
-                if (pinFailedAttempts >= deleteOnFailureAttempts) {
+                if (remainingAttempts <= 0) {
                     // Delete all data
                     AppDelegate *appDelegate = [AppDelegate getDelegate];
                     [appDelegate deleteAllData];

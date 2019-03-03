@@ -266,7 +266,7 @@ static DatabaseManager *sharedInstance;
         if (dd) {
             // Prompt for the new password
             UIStoryboard *changePasswordStoryboard = [UIStoryboard storyboardWithName:@"ChangePassword" bundle:nil];
-            ChangePasswordViewController *changePasswordViewController = [changePasswordStoryboard instantiateInitialViewController];
+            ChangePasswordViewController *changePasswordViewController = [changePasswordStoryboard instantiateViewControllerWithIdentifier:@"ChangePassword"];
 
             changePasswordViewController.donePressed = ^(ChangePasswordViewController *changePasswordViewController) {
                 
